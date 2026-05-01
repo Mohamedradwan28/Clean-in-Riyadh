@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عالم النظافة بالرياض | خدمات تنظيف منازل، شقق، سجاد، وخزانات</title>
+    <meta name="description"
+        content="عالم النظافة تقدم أفضل خدمات تنظيف المنازل، السجاد، الخزانات، ومكافحة الحشرات في الرياض. نضمن لك جودة عالية، أسعار تنافسية، وفريق عمل محترف. اتصل بنا الآن على 0532581693 لحجز خدماتك!">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">عالم النظافة بالرياض</div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul id="nav-menu">
+                <li><a href="#home">الصفحة الرئيسية</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#offers">العروض</a></li>
+                <li><a href="#portfolio">معرض الأعمال</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#faq">الأسئلة الشائعة</a></li>
+                <li><a href="#blog">المدونة</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        // تبديل ظهور/إخفاء القائمة
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('active');
+        }
+
+        // الانتقال السلس وإخفاء القائمة
+        function smoothScroll(target) {
+            const element = document.querySelector(target);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.remove('active');
+        }
+
+        // إغلاق القائمة بعد النقر على أي عنصر
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.getElementById('nav-menu');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>خدمات تنظيف ومكافحة حشرات بجودة عالية في الرياض</h1>
+            <p>نقدم أفضل خدمات التنظيف ومكافحة الحشرات في الرياض بأعلى معايير الجودة.</p>
+            <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="services">
+        <h2>خدماتنا</h2>
+        <div class="service-container">
+            <!-- قسم التنظيف -->
+            <div class="service-category">
+                <h3 class="category-title">خدمات التنظيف</h3>
+                <div class="service-grid">
+                    <!-- تنظيف الموكيت -->
+                    <div class="service-item">
+                        <i class="fas fa-broom"></i>
+                        <h4>تنظيف الموكيت</h4>
+                        <img src="image/تنظيف (2).webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            نقدم خدمات تنظيف الموكيت باستخدام أحدث التقنيات والأجهزة المتطورة في الرياض. نضمن إزالة البقع
+                            العميقة والروائح الكريهة مع الحفاظ على جودة الموكيت. نستخدم مواد تنظيف آمنة وفعالة تناسب
+                            جميع أنواع الموكيت. فريقنا مدرب على أعلى مستوى لضمان نتائج مبهرة. نحرص على استخدام مواد
+                            تنظيف صديقة للبيئة ولا تسبب أي أضرار للصحة. نقدم خدماتنا بأسعار تنافسية وفريق عمل محترف يعمل
+                            بكفاءة عالية. تنظيف الموكيت لدينا يشمل إزالة الأتربة والأوساخ العميقة باستخدام تقنيات البخار
+                            والشفط القوية. نضمن لك الحصول على موكيت نظيف ومعطر كالجديد تمامًا.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                    <!-- تنظيف السجاد -->
+                    <div class="service-item">
+                        <i class="fas fa-couch"></i>
+                        <h4>تنظيف السجاد</h4>
+                        <img src="image/سجاد (1).webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            تنظيف السجاد لدينا يتم بطرق متخصصة تضمن إزالة الأتربة والبقع العنيدة في الرياض. نستخدم تقنيات
+                            البخار والمواد المنظفة الآمنة لضمان نظافة عميقة دون الإضرار بالسجاد. نقدم خدماتنا بأسعار
+                            تنافسية وفريق عمل محترف. نحرص على استخدام مواد تنظيف عالية الجودة لا تسبب أي تلف للسجاد.
+                            تنظيف السجاد يشمل إزالة البقع الصعبة مثل القهوة والشوكولاتة والزيوت. نضمن لك الحصول على سجاد
+                            نظيف ومعطر كالجديد تمامًا. نقدم أيضًا خدمات تعقيم السجاد لضمان بيئة صحية وآمنة.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                    <!-- تنظيف المنازل -->
+                    <div class="service-item">
+                        <i class="fas fa-home"></i>
+                        <h4>تنظيف المنازل</h4>
+                        <img src="image/منازل1.webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            نقدم خدمات تنظيف المنازل الشاملة التي تشمل جميع الغرف والمطابخ والحمامات في الرياض. نستخدم مواد
+                            تنظيف صديقة للبيئة وفعالة لضمان نظافة مثالية. فريقنا مدرب على التعامل مع جميع أنواع الأوساخ
+                            والبقع. تنظيف المنازل يشمل إزالة الأتربة وتنظيف الأسطح وتعقيم الحمامات والمطابخ. نضمن لك
+                            الحصول على منزل نظيف ومعقم بشكل كامل. نقدم خدمات تنظيف المنازل بأسعار مناسبة وجودة عالية.
+                            فريقنا يعمل بكفاءة عالية لضمان رضاك التام.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+
+                    <!-- تنظيف الشقق -->
+                    <div class="service-item">
+                        <i class="fas fa-broom"></i>
+                        <h4>تنظيف الشقق</h4>
+                        <img src="image/image.png" alt="تنظيف الشقق" class="responsive-image">
+                        <p>
+                            نقدم خدمة تنظيف الشقق في الرياض بأعلى جودة، حيث نقوم بتنظيف جميع الغرف والمطابخ والحمامات
+                            باستخدام أحدث الأدوات والمنظفات الفعالة.
+                            نحرص على إزالة الغبار والأوساخ وتطهير الأسطح لضمان بيئة نظيفة وصحية. فريقنا مدرب على التعامل
+                            مع جميع أنواع الأرضيات والأثاث بعناية فائقة.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+
+                    <!-- تنظيف المباني -->
+                    <div class="service-item">
+                        <i class="fas fa-building"></i>
+                        <h4>تنظيف المباني</h4>
+                        <img src="image/فلل1.webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            تنظيف المباني يشمل تنظيف الواجهات الزجاجية والحجرية، بالإضافة إلى تنظيف المداخل والأماكن
+                            العامة في الرياض. نستخدم معدات متطورة لضمان نظافة المباني بشكل كامل. نقدم خدماتنا بأسعار مناسبة
+                            وجودة عالية. تنظيف المباني لدينا يشمل إزالة الأتربة والأوساخ من الواجهات باستخدام تقنيات
+                            الضغط العالي. نضمن لك الحصول على مبنى نظيف ولامع كالجديد تمامًا. فريقنا مدرب على التعامل مع
+                            جميع أنواع المباني سواء كانت سكنية أو تجارية.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                    <!-- تنظيف الخزانات -->
+                    <div class="service-item">
+                        <i class="fas fa-water"></i>
+                        <h4>تنظيف الخزانات</h4>
+                        <img src="image/خزانات .webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            تنظيف وتعقيم خزانات المياه لدينا يتم بطرق آمنة وفعالة في الرياض. نضمن إزالة الرواسب والطحالب
+                            مع تعقيم الخزان لمنع نمو البكتيريا. نستخدم مواد تنظيف معتمدة من وزارة الصحة لضمان سلامة
+                            المياه. تنظيف الخزانات يشمل إزالة الرواسب المتراكمة وتعقيم الخزان باستخدام مواد آمنة. نضمن
+                            لك الحصول على مياه نظيفة وصحية. فريقنا مدرب على التعامل مع جميع أنواع الخزانات سواء كانت
+                            بلاستيكية أو معدنية.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+
+                    <!-- عزل الأسطح -->
+                    <div class="service-item">
+                        <i class="fas fa-building"></i>
+                        <h4>عزل الأسطح والخزانات</h4>
+                        <img src="images/image.png" alt="عزل الأسطح" class="responsive-image">
+                        <p>
+                            نقدم خدمة عزل الأسطح لحماية المباني من تسربات المياه وتأثيرات الحرارة في الرياض. نستخدم أفضل مواد
+                            العزل لضمان المتانة والعزل الكامل ضد الرطوبة والحرارة.
+                            فريقنا متخصص في تركيب العزل الحراري والمائي بجودة عالية، مما يساعد على تقليل استهلاك الطاقة
+                            والحفاظ على راحة المبنى.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                    <!-- تنظيف المسابح -->
+                    <div class="service-item">
+                        <i class="fas fa-swimming-pool"></i>
+                        <h4>تنظيف المسابح</h4>
+                        <img src="image/مسبح.webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            نقدم خدمات تنظيف وصيانة المسابح باحترافية في الرياض. نضمن إزالة الأتربة والأوساخ وتنقية المياه
+                            باستخدام مواد كيميائية آمنة. فريقنا مدرب على التعامل مع جميع أنواع المسابح. تنظيف المسابح
+                            يشمل إزالة الأتربة والأوساخ من قاع المسبح وتنقية المياه. نضمن لك الحصول على مسبح نظيف وآمن
+                            للاستخدام. نقدم خدماتنا بأسعار مناسبة وجودة عالية.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                    <!-- تنظيف الحدائق -->
+                    <div class="service-item">
+                        <i class="fas fa-leaf"></i>
+                        <h4>تنظيف الحدائق</h4>
+                        <img src="image/ممرات.webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            نقدم خدمات تنظيف الحدائق وإزالة الأوراق الجافة والأعشاب الضارة في الرياض. نضمن بيئة نظيفة
+                            وصحية لحديقتك باستخدام أدوات متخصصة. تنظيف الحدائق يشمل إزالة الأوراق الجافة وتقليم الأشجار
+                            وإزالة الأعشاب الضارة. نضمن لك الحصول على حديقة نظيفة وجميلة. فريقنا مدرب على التعامل مع
+                            جميع أنواع الحدائق.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                    <!-- تنظيف الفلل والقصور -->
+                    <div class="service-item">
+                        <i class="fas fa-home"></i>
+                        <h4>تنظيف الفلل والقصور</h4>
+                        <img src="image/فلل1.webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            نقدم خدمات تنظيف الفلل والقصور باحترافية عالية في الرياض. نضمن نظافة كل ركن من أركان الفيلا أو
+                            القصر باستخدام أحدث التقنيات. تنظيف الفلل يشمل إزالة الأتربة وتنظيف الأسطح وتعقيم الحمامات
+                            والمطابخ. نضمن لك الحصول على فيلا نظيفة ومعقمة بشكل كامل. فريقنا مدرب على التعامل مع جميع
+                            أنواع الفلل والقصور.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-mosque"></i>
+                        <h4>تنظيف المساجد</h4>
+                        <img src="image/مساجد.webp" alt="تنظيف المساجد" class="responsive-image">
+                        <p>
+                            نقدم خدمات تنظيف المساجد باحترافية عالية في الرياض. نضمن نظافة كل ركن من أركان المسجد، بما في
+                            ذلك السجاد، الأرضيات، الحمامات، وأماكن الوضوء. نستخدم مواد تنظيف آمنة وفعالة تناسب طبيعة
+                            المساجد، مع الحفاظ على قدسية المكان. تنظيف المساجد يشمل إزالة الأتربة، تعقيم الأسطح، وتنظيف
+                            السجاد بشكل دوري. فريقنا مدرب على التعامل مع المساجد باحترام وكفاءة عالية.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم مكافحة الحشرات -->
+            <div class="service-category">
+                <h3 class="category-title">خدمات مكافحة الحشرات</h3>
+                <div class="service-grid">
+                    <!-- مكافحة الصراصير -->
+                    <div class="service-item">
+                        <i class="fas fa-bug"></i>
+                        <h4>مكافحة الصراصير</h4>
+                        <img src="image/صرر.webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            نقدم خدمات مكافحة الصراصير باستخدام مواد آمنة وفعالة في الرياض. نضمن القضاء على الصراصير في
+                            جميع أنحاء المنزل أو المكان التجاري. فريقنا مدرب على التعامل مع جميع أنواع الصراصير. نستخدم
+                            مواد مكافحة صديقة للبيئة ولا تسبب أي أضرار للصحة. نضمن لك الحصول على بيئة خالية من الصراصير.
+                            نقدم خدماتنا بأسعار تنافسية وجودة عالية.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                    <!-- مكافحة النمل -->
+                    <div class="service-item">
+                        <i class="fas fa-spider"></i>
+                        <h4>مكافحة النمل</h4>
+                        <img src="image/النمل الابيض.webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            نقدم حلولًا فعالة لمكافحة النمل في المنازل والمكاتب في الرياض. نستخدم مواد آمنة لا تضر
+                            بالصحة أو البيئة. نضمن القضاء على النمل بشكل نهائي. نحرص على استخدام مواد مكافحة عالية
+                            الجودة لا تسبب أي تلف للأثاث. نضمن لك الحصول على بيئة خالية من النمل. فريقنا مدرب على
+                            التعامل مع جميع أنواع النمل.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                    <!-- مكافحة الفئران -->
+                    <div class="service-item">
+                        <i class="fas fa-paw"></i>
+                        <h4>مكافحة الفئران</h4>
+                        <img src="image/فار.webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            نقدم خدمات مكافحة الفئران باستخدام طرق آمنة وفعالة في الرياض. نضمن القضاء على الفئران دون
+                            الإضرار بالصحة أو البيئة. فريقنا مدرب على التعامل مع جميع أنواع الفئران. نستخدم مواد مكافحة
+                            صديقة للبيئة ولا تسبب أي أضرار للصحة. نضمن لك الحصول على بيئة خالية من الفئران. نقدم خدماتنا
+                            بأسعار مناسبة وجودة عالية.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+
+                    <!-- مكافحة الذباب والبعوض -->
+                    <div class="service-item">
+                        <i class="fas fa-mosquito"></i>
+                        <h4>مكافحة الذباب والبعوض</h4>
+                        <img src="image/البعوض.webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            نقدم حلولًا فعالة لمكافحة الذباب والبعوض باستخدام مواد آمنة في الرياض. نضمن بيئة خالية من
+                            الحشرات الطائرة المزعجة. فريقنا مدرب على التعامل مع جميع أنواع الحشرات الطائرة. نستخدم مواد
+                            مكافحة صديقة للبيئة ولا تسبب أي أضرار للصحة. نضمن لك الحصول على بيئة خالية من الذباب
+                            والبعوض. نقدم خدماتنا بأسعار تنافسية وجودة عالية.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                    <!-- مكافحة البق -->
+                    <div class="service-item">
+                        <i class="fas fa-bed"></i>
+                        <h4>مكافحة البق</h4>
+                        <img src="image/بق.webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            نقدم خدمات مكافحة البق باستخدام مواد آمنة وفعالة في الرياض. نضمن القضاء على البق بشكل نهائي دون
+                            الإضرار بالصحة. فريقنا مدرب على التعامل مع جميع أنواع البق. نستخدم مواد مكافحة صديقة للبيئة
+                            ولا تسبب أي أضرار للصحة. نضمن لك الحصول على بيئة خالية من البق. نقدم خدماتنا بأسعار مناسبة
+                            وجودة عالية.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                    <!-- مكافحة النمل الأبيض -->
+                    <div class="service-item">
+                        <i class="fas fa-bug"></i>
+                        <h4>مكافحة النمل الأبيض</h4>
+                        <img src="image/النمل الابيض.webp" alt="تنظيف" class="responsive-image">
+                        <p>
+                            نقدم خدمات مكافحة النمل الأبيض باستخدام طرق متخصصة في الرياض. نضمن القضاء على النمل الأبيض
+                            وحماية المنشآت من التلف. فريقنا مدرب على التعامل مع جميع أنواع النمل الأبيض. نستخدم مواد
+                            مكافحة صديقة للبيئة ولا تسبب أي أضرار للصحة. نضمن لك الحصول على بيئة خالية من النمل الأبيض.
+                            نقدم خدماتنا بأسعار مناسبة وجودة عالية.
+                        </p>
+                        <a href="tel:0532581693" class="btn">اطلب خدمة الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم العروض -->
+    <section id="offers" class="offers">
+        <h2>العروض والخصومات</h2>
+        <div class="offer-list">
+            <!-- عرض تنظيف المنازل -->
+            <div class="offer-item">
+                <i class="fas fa-home"></i>
+                <h3>عرض تنظيف المنازل</h3>
+                <p>خصم 20% على تنظيف المنازل هذا الأسبوع فقط!</p>
+                <a href="tel:0532581693" class="btn">احجز الآن</a>
+            </div>
+            <!-- عرض مكافحة الحشرات -->
+            <div class="offer-item">
+                <i class="fas fa-bug"></i>
+                <h3>عرض مكافحة الحشرات</h3>
+                <p>احصل على خصم 30% على خدمات مكافحة الحشرات.</p>
+                <a href="tel:0532581693" class="btn">احجز الآن</a>
+            </div>
+            <!-- عرض تنظيف الفلل -->
+            <div class="offer-item">
+                <i class="fas fa-building"></i>
+                <h3>عرض تنظيف الفلل</h3>
+                <p>خصم 25% على تنظيف الفلل والقصور لفترة محدودة.</p>
+                <a href="tel:0532581693" class="btn">احجز الآن</a>
+            </div>
+            <!-- عرض تنظيف المسابح -->
+            <div class="offer-item">
+                <i class="fas fa-swimming-pool"></i>
+                <h3>عرض تنظيف المسابح</h3>
+                <p>خصم 15% على تنظيف وصيانة المسابح هذا الشهر.</p>
+                <a href="tel:0532581693" class="btn">احجز الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- معرض الأعمال -->
+    <section id="portfolio" class="portfolio">
+        <h2>معرض الأعمال</h2>
+        <div class="gallery">
+            <img src="image/WhatsApp Image 2025-01-13 at 10.38.54 PM (1).jpeg" alt="تنظيف">
+            <img src="image/WhatsApp Image 2025-01-13 at 10.38.54 PM.jpeg" alt="تنظيف">
+            <img src="image/WhatsApp Image 2025-01-13 at 10.38.55 PM.jpeg" alt="تنظيف">
+            <img src="image/WhatsApp Image 2025-01-13 at 10.38.57 PM.jpeg" alt="تنظيف">
+            <img src="image/WhatsApp Image 2025-01-13 at 10.38.57 PM.jpeg" alt="تنظيف">
+            <img src="image/WhatsApp Image 2025-01-13 at 10.39.00 PM.jpeg" alt="تنظيف">
+            <img src="image/WhatsApp Image 2025-01-13 at 10.38.56 PM.jpeg" alt="تنظيف">
+            <img src="image/WhatsApp Image 2025-01-13 at 10.38.58 PM (1).jpeg" alt="تنظيف">
+        </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section id="about" class="about">
+        <h2>من نحن</h2>
+        <p>نحن شركة عالم النظافة المتخصصة في خدمات التنظيف ومكافحة الحشرات في الرياض، نقدم خدماتنا بجودة عالية وأسعار تنافسية، مع فريق عمل محترف ومدرب على أعلى مستوى.</p>
+    </section>
+
+    <!-- الأسئلة الشائعة -->
+    <section id="faq" class="faq">
+        <h2>الأسئلة الشائعة</h2>
+        <div class="faq-list">
+            <!-- سؤال 1 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>ما هي أسعار خدمات التنظيف؟</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>تختلف الأسعار حسب حجم العمل ونوع الخدمة. يرجى الاتصال بنا على 0532581693 للحصول على عرض سعر دقيق يناسب احتياجاتك.</p>
+                </div>
+            </div>
+            <!-- سؤال 2 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>هل خدمات مكافحة الحشرات آمنة؟</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>نعم، نستخدم مواد آمنة وفعالة لا تضر بالصحة أو البيئة. جميع المواد معتمدة من الجهات الصحية المختصة.</p>
+                </div>
+            </div>
+            <!-- سؤال 3 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>كم مرة أحتاج إلى تنظيف الخزانات؟</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>يوصى بتنظيف الخزانات كل 6 أشهر للحفاظ على جودة المياه ومنع تراكم الرواسب والطحالب.</p>
+                </div>
+            </div>
+            <!-- سؤال 4 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>هل تقدمون خدمات طوارئ؟</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>نعم، نقدم خدمات طوارئ على مدار الساعة لتنظيف المنازل ومكافحة الحشرات في حالات الطوارئ. اتصل بنا على 0532581693.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript لإظهار وإخفاء الإجابات
+        document.querySelectorAll('.faq-question').forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <!-- المدونة -->
+    <section id="blog" class="blog">
+        <h2>المدونة</h2>
+        <div class="blog-list">
+            <!-- مقال 1 -->
+            <div class="blog-item">
+                <div class="blog-content">
+                    <h3>نصائح للحفاظ على نظافة المنزل</h3>
+                    <p>تعرف على أفضل النصائح للحفاظ على نظافة منزلك بشكل دائم. نقدم لك نصائح عملية لتنظيم الوقت واستخدام المواد المناسبة.</p>
+                    <a href="#" class="btn">اقرأ المزيد</a>
+                </div>
+            </div>
+            <!-- مقال 2 -->
+            <div class="blog-item">
+                <div class="blog-content">
+                    <h3>كيفية الوقاية من الحشرات</h3>
+                    <p>طرق فعالة للوقاية من الحشرات في المنزل. تعرف على المواد الطبيعية والكيميائية التي يمكن استخدامها لضمان بيئة خالية من الحشرات.</p>
+                    <a href="#" class="btn">اقرأ المزيد</a>
+                </div>
+            </div>
+            <!-- مقال 3 -->
+            <div class="blog-item">
+                <div class="blog-content">
+                    <h3>تنظيف الخزانات بطرق آمنة</h3>
+                    <p>تعرف على أفضل الطرق لتنظيف وتعقيم خزانات المياه بشكل آمن وفعال. نقدم لك نصائح للحفاظ على جودة المياه.</p>
+                    <a href="#" class="btn">اقرأ المزيد</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section id="contact" class="contact">
+        <h2>اتصل بنا</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="اسمك" required>
+            <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+            <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+            <textarea name="message" placeholder="رسالتك" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <div class="social-sidebar">
+        <!-- شريط جديد للواتساب والاتصال فقط -->
+        <div class="social-left">
+            <a href="https://wa.me/966532581693" class="social-icon whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span class="notification-badge">5</span>
+            </a>
+        </div>
+
+        <div class="social-right">
+            <a href="tel:0532581693" class="social-icon phone" target="_blank">
+                <i class="fas fa-phone"></i>
+            </a>
+            <span class="call-label">اتصال</span>
+        </div>
+    </div>
+
+    <div class="map-container" style="width: 100%; height: 500px;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d144679.8884260399!2d46.5888!3d24.6877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2YXYs9mK2YrYqSDYp9mE2YXYp9mG2YrYqQ!5e0!3m2!1sar!2ssa!4v1698573152965!5m2!1sar!2ssa"
+            width="100%" height="100%" style="border: none;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+   
+    <footer>
+<p>© 2026 عالم النظافة بالرياض. جميع الحقوق محفوظة.</p>
+        <p>تم تصميم بواسطة <a href="https://wa.me/+201019691450" target="_blank"> Mohamed Radwan 01019691450 </a>.</p>
+    </footer>
+    </footer>
+</body>
+</html>
