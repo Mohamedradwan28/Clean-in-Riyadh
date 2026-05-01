@@ -95,7 +95,7 @@ ul li a:hover {
 
 /* تصميم الصفحة الرئيسية */
 .hero {
-    background:  url('images/وجح.webp') no-repeat center center/cover;
+    background:  url('https://raw.githubusercontent.com/Mohamedradwan28/Clean-in-Riyadh/refs/heads/main/وجح.webp') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
